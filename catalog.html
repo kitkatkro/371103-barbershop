@@ -1,0 +1,172 @@
+<! DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Барбершоп Бородинский</title>
+    </head>
+
+    <body>
+        <header class="main-header">
+            <div class="container"
+                <nav class="main-navigation">
+                    <ul>
+                        <!-- Не очень понятно, нужно ли делать логотип ссылкой. Но обычно, на логотип можно нажать и откроется страница barbershop.ru. Мне делать эту ссылку? -->
+                        <li><a href="#">Информация</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="user-block">
+                    <a class="login" href="#">Вход</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <h1>Средства для ухода</h1>
+                <section class="breadcrumbs">
+                    <ul >
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#" class="active-breadcrumb">Средства для ухода</a></li>  <!--Стоит ли создавать класс для дальнейшего оформления данной ссылки? Если да, можно ли дать такое название?-->
+                    </ul>
+                </section>
+                <section class="filter"> <!-- Нужно ли фильтр тоже в блок оборачивать? -->
+                    <form action=# method="post">
+                        <h2>Производители:</h2> <!-- Я подумала, что нужно вставить заголовок в форму, так как фильтрация будет и по производителям, и по группам товаров, но не понимаю, можно ли так-->
+                        <input type="checkbox" name="producer-1" checked>
+                        <label for="producer-1" >Baxter of California</label>
+                        <input type="checkbox" name="producer-2">
+                        <label for="producer-2">Mr Natty</label>
+                        <input type="checkbox" name="producer-3" checked>
+                        <label for="producer-3">Suavecito</label>
+                        <input type="checkbox" name="producer-4">
+                        <label for="producer-4">Malin+Goetz</label>
+                        <input type="checkbox" name="producer-5">
+                        <label for="producer-5">Murray's</label>
+                        <input type="checkbox" name="producer-6" checked>
+                        <label for="producer-6">American crew</label>
+                        <h2>Группы товаров:</h2>
+                        <label> <!-- Как сделать связь тегов label и input без вложения? -->
+                            <input type="radio" name="item-group" value="shaving-accessories">
+                            Бритвенные принадлежности
+                        </label>
+                        <label>
+                            <input type="radio" name="item-group" value="care-prosucts" checked>
+                            Средства для ухода
+                        </label>
+                        <label>
+                            <input type="radio" name="item-group" value="accessories">
+                            Аксессуары
+                        </label>
+                        <input type="submit" value="Показать">
+                    </form>
+                </section>
+
+            <div class="item-catalog">
+                <article class="item">
+                    <!--надо ли помещать картинку в отдельный контейнер figure/div?-->
+                    <div class="item-info"
+                        <p>Набор для путешествий &quot;BAXTER OF CALIFORNIA&quot;</p>
+                        <div class="item-info-price">
+                            <p>2900 руб.</p> <!--Надо ли ставить пробел между тысячным и сотым разрядом? Или нужен специальный шрифт? -->
+                        </div>
+                        <div class="item-info-buy"
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <!--надо ли помещать картинку в отдельный контейнер figure/div?-->
+                    <div class="item-info"
+                        <p>Увлажняющий кондиционер &quot;BAXTER OF CALIFORNIA&quot;</p>
+                        <div class="item-info-price">
+                            <p>750 руб.</p>
+                        </div>
+                        <div class="item-info-buy"
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <!--надо ли помещать картинку в отдельный контейнер figure/div?-->
+                    <div class="item-info"
+                        <p>Гель для волос &quot;SUAVECITO&quot;</p>
+                        <div class="item-info-price">
+                            <p>290 руб.</p>
+                        </div>
+                        <div class="item-info-buy"
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <!--надо ли помещать картинку в отдельный контейнер figure/div?-->
+                    <div class="item-info"
+                        <p>Глина для укладки волос &quot;AMERICAN CREW&quot;</p>
+                        <div class="item-info-price">
+                            <p>500 руб.</p>
+                        </div>
+                        <div class="item-info-buy"
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <!--надо ли помещать картинку в отдельный контейнер figure/div?-->
+                    <div class="item-info"
+                        <p>Гель для волос &quot;AMERICAN CREW&quot;</p>
+                        <div class="item-info-price">
+                            <p>300 руб.</p>
+                        </div>
+                        <div class="item-info-buy"
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="item">
+                    <!--надо ли помещать картинку в отдельный контейнер figure/div?-->
+                    <div class="item-info"
+                        <p>Набор для бритья &quot;BAXTER OF CALIFORNIA&quot;</p>
+                        <div class="item-info-price">
+                            <p>3900 руб.</p>
+                        </div>
+                        <div class="item-info-buy"
+                            <a href="#">Купить</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="pages">
+                <a href="#">1</a>
+                <a href="#" class="selected-page">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                <section class="footer-contacts">
+                    Барбершоп «Бородинский»<br>
+                    Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                    <a href="#">Как нас найти?</a><br>
+                    Телефон: +7 (812) 666-02-66
+                </section>
+                <section class="footer-social">
+                    <p>Давайте дружить!</p>
+                    <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                    <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                    <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+                </section>
+                <section class="footer-copyright">
+                    <p>Разработано:</p>
+                    <a class="btn" href="#">HTMLAcademy.ru</a>
+                    </section>
+            </div>
+        </footer>
+    </body>
+</html>
