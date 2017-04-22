@@ -1,0 +1,21 @@
+body {
+    /* Оформление текста */
+    font-size: 14px;
+    line-height: 2px;
+    color: #000000;
+    font-weight: bold; /* ??? */
+    font-family: "PTSans"; /*??? */
+    text-transform: uppercase;
+}
+
+h1 {
+    /* Оформление текста */
+    font-size: 30px;
+    line-height: 6px;
+}
+
+.catalog-filter h2 {
+    /* Оформление текста */
+    font-size: 24px;
+    line-height: 3px;
+}
